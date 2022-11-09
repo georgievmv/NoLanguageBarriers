@@ -1,0 +1,74 @@
+.container {
+  height: 100vh;
+  background-color: rgb(185, 216, 237);
+}
+
+.heading {
+  padding: 2rem;
+  margin: 0px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(46, 47, 51);
+  font-size: 4rem;
+}
+
+.content {
+  display: flex;
+  border: 3px solid white;
+  margin: 2rem;
+  margin-block: auto;
+  height: 70%;
+  border-radius: 15px;
+}
+
+.directly {
+  height: 90%;
+  width: auto;
+  margin: 1rem;
+  width: 50%;
+}
+
+.separator {
+  border-right: 3px solid white;
+  margin-block: 1rem;
+  height: 90%;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 50%;
+  margin: 1rem;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.inputGroup {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin-top: 10px;
+}
+.button {
+  background-color: rgb(38, 127, 193);
+  border: none;
+  color: white;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 10px;
+}
