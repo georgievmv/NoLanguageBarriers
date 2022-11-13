@@ -14,14 +14,18 @@ nav a {
   color: black;
   margin-inline: 1rem;
 }
-
+@media (max-width: 850px) {
+  .nav a {
+    margin-inline: 0.4rem;
+  }
+}
 @media (max-width: 650px) {
   .active {
     transform: translateY(+110vh);
   }
 
   .nav {
-    width: 100vw;
+    width: 110vw;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -43,6 +47,8 @@ nav a {
     justify-content: space-between;
   }
   .icon {
+    position: fixed;
+    right: 10px;
     height: 30px;
   }
   .closeIcon {

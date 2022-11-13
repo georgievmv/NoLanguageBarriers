@@ -1,2 +1,35 @@
-.App {
+.toTheTop {
+  cursor: pointer;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 200%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
+.contact-icon {
+  height: 2rem;
+}
+.social-icon {
+  color: blue;
+  height: 1rem;
+}
+@media (max-width: 650px) {
+  .contact-icon {
+    height: 1rem;
+  }
 }

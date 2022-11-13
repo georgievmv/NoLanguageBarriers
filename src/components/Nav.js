@@ -48,7 +48,7 @@ const Nav = () => {
           <a onClick={iconClickHandler} href="#getInTouch">
             Who we are
           </a>
-          <a onClick={iconClickHandler} href="#">
+          <a onClick={iconClickHandler} href="#whatWeDo">
             What we do
           </a>
           <a onClick={iconClickHandler} href="#">
