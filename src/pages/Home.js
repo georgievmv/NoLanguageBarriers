@@ -6,14 +6,7 @@ const Home = () => {
   return (
     <div id="home" className={styles.container}>
       <Nav />
-      <div
-        style={{
-          height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <div className={styles.contentBox}>
         <div className={styles.content}>
           <div className={styles.text}>
             <h1>No language barriers</h1>

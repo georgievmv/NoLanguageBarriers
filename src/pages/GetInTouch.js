@@ -18,18 +18,28 @@ const GetInTouch = () => {
       <div className={styles.content}>
         <div className={styles.directly}>
           <p>Reach us directly by:</p>
-          <Contacts icon={phoneIcon} type="Phone:" contact="+359 887 320 313" />
-          <Contacts
-            icon={emailIcon}
-            type="Email:"
-            contact="ivanilev@nolanguagebarriers.com"
-          />
-          <Contacts
-            icon={whatsAppIcon}
-            type="Whatsapp:"
-            contact="+359 887 320 313"
-          />
-          <Contacts icon={viberIcon} type="Viber:" contact="+359 887 320 313" />
+          <div className={styles.gridContainer}>
+            <Contacts
+              icon={phoneIcon}
+              type="Phone:"
+              contact="+359 887 320 313"
+            />
+            <Contacts
+              icon={emailIcon}
+              type="Email:"
+              contact="ivanilev@nolanguagebarriers.com"
+            />
+            <Contacts
+              icon={whatsAppIcon}
+              type="Whatsapp:"
+              contact="+359 887 320 313"
+            />
+            <Contacts
+              icon={viberIcon}
+              type="Viber:"
+              contact="+359 887 320 313"
+            />
+          </div>
           <div className={styles.social}>
             <div className={styles.socialIcon}>{facebookIcon}</div>
             <div className={styles.socialIcon}>{linkedInIcon}</div>

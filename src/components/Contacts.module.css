@@ -26,3 +26,11 @@
     font-size: 0.5rem;
   }
 }
+
+/* if variant 2 */
+.container:before {
+  content: "";
+}
+.container:after {
+  content: "";
+}

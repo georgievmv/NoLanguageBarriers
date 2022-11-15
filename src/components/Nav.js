@@ -54,7 +54,7 @@ const Nav = () => {
           <a onClick={iconClickHandler} href="#">
             Our services
           </a>
-          <a onClick={iconClickHandler} href="#">
+          <a onClick={iconClickHandler} href="#languages">
             Languages
           </a>
           <a onClick={iconClickHandler} href="#">

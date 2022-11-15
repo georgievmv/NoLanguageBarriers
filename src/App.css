@@ -22,11 +22,14 @@
 }
 
 .contact-icon {
+  color: rgb(38, 127, 193);
+
   height: 2rem;
 }
 .social-icon {
-  color: blue;
+  color: rgb(38, 127, 193);
   height: 1rem;
+  cursor: pointer;
 }
 @media (max-width: 650px) {
   .contact-icon {

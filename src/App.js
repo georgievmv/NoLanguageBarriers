@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import { faUpLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import WhatWeDo from "./pages/WhatWeDo";
+import Languages from "./pages/Languages";
 
 function App() {
   const [showArrow, setShowArrow] = useState(false);
@@ -32,6 +33,7 @@ function App() {
       <Home />
       <GetInTouch />
       <WhatWeDo />
+      <Languages />
     </div>
   );
 }
