@@ -14,12 +14,18 @@ function App() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setShowArrow(true);
-        } else {
-          setShowArrow(false);
         }
       });
     });
     observer.observe(document.querySelector("#getInTouch"));
+    const homeObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setShowArrow(false);
+        }
+      });
+    });
+    homeObserver.observe(document.querySelector("#home"));
   }, []);
   const upIcon = (
     <a href="#home">

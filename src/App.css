@@ -1,4 +1,6 @@
 .toTheTop {
+  color: rgb(38, 127, 193);
+
   cursor: pointer;
   position: fixed;
   width: 30px;
