@@ -1,6 +1,8 @@
 .container {
   display: flex;
   gap: 2rem;
+  padding-left: 30px;
+  padding-right: auto;
   align-items: center;
   margin-bottom: 1rem;
   margin-right: 0px;
@@ -28,9 +30,3 @@
 }
 
 /* if variant 2 */
-.container:before {
-  content: "";
-}
-.container:after {
-  content: "";
-}

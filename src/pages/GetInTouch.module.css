@@ -36,11 +36,14 @@
   height: 90%;
   width: 50%;
   margin: 1rem;
+  position: relative;
 }
 .directly p {
   align-self: center;
 }
-
+.contactForm p {
+  align-self: center;
+}
 .social {
   width: 70%;
   display: flex;
@@ -65,7 +68,10 @@
   height: 100%;
   width: 100%;
 }
-
+.contactForm input:focus {
+  background-color: transparent;
+  outline: none;
+}
 .inputGroup {
   width: 50%;
   display: flex;
@@ -79,6 +85,7 @@
   margin-top: 10px;
 }
 .button {
+  cursor: pointer;
   background-color: rgb(38, 127, 193);
   border: none;
   color: white;
@@ -86,6 +93,60 @@
   padding-block: 0.5rem;
   border-radius: 10px;
 }
+
+.errorMessage {
+  position: absolute;
+  top: 1rem;
+  right: 40%;
+  color: #d9534f;
+  animation: shake 1s forwards;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@keyframes shakeMobile {
+  10%,
+  90% {
+    transform: translateX(-49%);
+  }
+
+  20%,
+  80% {
+    transform: translateX(-51);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translateX(-48%);
+  }
+
+  40%,
+  60% {
+    transform: translateX(-52%);
+  }
+}
+
 /* @media (max-width: 650px) {
   .contact-icon {
     height: 1rem;
@@ -145,9 +206,17 @@
   }
 }
  */
+
 @media (max-width: 650px) {
   .contact-icon {
     height: 1rem;
+  }
+  .errorMessage {
+    left: 50%;
+    width: 200px;
+    transform: translateX(-50%);
+    animation: none;
+    animation: shakeMobile 1s forwards;
   }
   .heading {
     font-size: 1.5rem;
@@ -156,11 +225,13 @@
   }
   .container {
     height: 100vh;
-    min-height: 350px;
+    min-height: 500px;
   }
   .content {
+    height: 85%;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .separator {
     border-right: none;
@@ -200,6 +271,7 @@
     font-size: 0.8rem;
   }
   .contactForm {
+    height: 55%;
     width: 80%;
   }
   .contactForm input {
