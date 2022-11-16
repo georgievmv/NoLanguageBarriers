@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/NoLanguageBarriers/static/css/main.d139e025.css",
-    "main.js": "/NoLanguageBarriers/static/js/main.41497612.js",
-    "static/media/britishFlag.jpg": "/NoLanguageBarriers/static/media/britishFlag.e41433b4de2c44bdfd61.jpg",
-    "static/media/franceFlag.png": "/NoLanguageBarriers/static/media/franceFlag.73f91b4e96d67f8a03f0.png",
-    "static/media/germanFlag.jpg": "/NoLanguageBarriers/static/media/germanFlag.0cc4beebde3a2fe7522d.jpg",
-    "index.html": "/NoLanguageBarriers/index.html",
-    "main.d139e025.css.map": "/NoLanguageBarriers/static/css/main.d139e025.css.map",
-    "main.41497612.js.map": "/NoLanguageBarriers/static/js/main.41497612.js.map"
+    "main.css": "static/css/main.d139e025.css",
+    "main.js": "static/js/main.41497612.js",
+    "static/media/britishFlag.jpg": "static/media/britishFlag.e41433b4de2c44bdfd61.jpg",
+    "static/media/franceFlag.png": "static/media/franceFlag.73f91b4e96d67f8a03f0.png",
+    "static/media/germanFlag.jpg": "static/media/germanFlag.0cc4beebde3a2fe7522d.jpg",
+    "index.html": "index.html",
+    "main.d139e025.css.map": "static/css/main.d139e025.css.map",
+    "main.41497612.js.map": "static/js/main.41497612.js.map"
   },
   "entrypoints": [
     "static/css/main.d139e025.css",
