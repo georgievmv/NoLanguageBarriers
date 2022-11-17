@@ -1,5 +1,4 @@
 .container {
-  margin: 20px;
   height: 100vh;
   background-color: rgb(185, 216, 237);
   position: relative;
@@ -57,7 +56,6 @@
 
 @media (max-width: 850px) {
   .container {
-    margin: 5px;
     height: 100vh;
     background-color: rgb(185, 216, 237);
   }
