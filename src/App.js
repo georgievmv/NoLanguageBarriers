@@ -10,23 +10,18 @@ import Languages from "./pages/Languages";
 function App() {
   const [showArrow, setShowArrow] = useState(false);
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setShowArrow(true);
-        }
-      });
-    });
-    observer.observe(document.querySelector("#getInTouch"));
-    const homeObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setShowArrow(false);
-        }
-      });
-    });
-    homeObserver.observe(document.querySelector("#home"));
-  }, []);
+    const scrollHandler = (ev) => {
+      var homeDiv = document.getElementById("home");
+      var distanceToTop = homeDiv.getBoundingClientRect().top;
+      if (distanceToTop < 0) {
+        setShowArrow(true);
+      } else setShowArrow(false);
+    };
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, [showArrow]);
   const upIcon = (
     <a href="#home">
       <FontAwesomeIcon className="toTheTop" icon={faUpLong}></FontAwesomeIcon>
